@@ -1,0 +1,40 @@
+nums <- scan("qus.txt", sep=" ") 
+len <- length(nums)
+
+temp <- 0
+pass <- 0
+swap <- -2
+
+#2. a.BUBBLE SORT ALGORITHM
+# for(i in 1 : (len - 1)){
+# 
+#   for (j in 1 : (len - 1)){
+# 
+#     if(nums[j] > nums[j+1]){
+#       temp <- nums[j]
+#       nums[j] <- nums[j+1]
+#       nums[j+1] <- temp
+#     }
+#   }
+#   pass <- pass +1
+# }
+
+#2. b.BUBBLE SORT WITH SWAP COUNTER ALGO
+# while( swap != 0 ){
+#   swap <- 0
+# 
+#   for(i in 1 : (len-pass-1)){
+#     if(nums[i] > nums[i+1]){
+#       temp <- nums[i]
+#       nums[i] <- nums[i+1]
+#       nums[i+1] <- temp
+#       swap <- swap+1
+#     }
+# 
+#   }
+#   pass <- pass + 1
+# }
+
+min_val <- sum(nums[1:len-1])
+max_val <- sum(nums[2:len])
+cat(min_val, max_val)
